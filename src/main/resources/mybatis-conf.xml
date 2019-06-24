@@ -5,7 +5,9 @@
 <configuration>
     <properties resource="db.properties"/>
     <typeAliases>
-        <typeAlias type="com.hhit.springmvc.bean.User" alias="user"/>
+        <package name="com.hhit.springmvc.bean"/>
+<!--        实体类取别名，默认的别名即类名，只不过首字母变为小写-->
+<!--        <typeAlias type="com.hhit.springmvc.bean.User" alias="user"/>-->
     </typeAliases>
     <environments default="development">
         <environment id="development">
